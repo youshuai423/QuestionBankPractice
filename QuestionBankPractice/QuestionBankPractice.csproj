@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Resources\arrow-left.png" />
+    <None Remove="Resources\arrow-right.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\QuestionBankReader\QuestionBankReader\QuestionBankGenerator.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Resources\arrow-left.png" />
+    <Resource Include="Resources\arrow-right.png" />
+  </ItemGroup>
+
+</Project>
